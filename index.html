@@ -129,29 +129,35 @@
             top: 0.7778rem;
             right: 1.2778rem;
         }
+
         .close:hover {
             cursor: pointer;
             color: #808080;
         }
-        .right-column-bottom-action button, 
+
+        .right-column-bottom-action button,
         .right-column-bottom-action a,
         .right-column-bottom-action p {
             display: inline-block;
         }
+
         .right-column-bottom-action p {
             margin: 0;
             font: normal normal normal 1rem/1.1667rem Gill Sans MT;
             color: #000000;
             padding-left: 0.7778rem;
         }
+
         .right-column-bottom-action a {
             font: normal normal normal 1rem/1.1667rem Gill Sans MT;
             color: #00008B;
             padding-left: 1.3333rem;
         }
+
         .right-column-bottom-action a:hover {
             color: #808080;
         }
+
         .btn {
             font: normal normal normal 1rem/1.1667rem Gill Sans MT;
             color: #FFFFFF;
@@ -164,9 +170,68 @@
             border-radius: 20px;
             box-shadow: 0px 4px 8px darkgrey;
         }
+
         .btn:hover {
             cursor: pointer;
             box-shadow: 0px 4px 8px grey;
+        }
+
+        @media screen and (max-width: 1300px) {
+            .container {
+                width: 60%;
+            }
+        }
+
+        @media screen and (max-width: 1000px) {
+
+            .right-column-bottom-action button,
+            .right-column-bottom-action a,
+            .right-column-bottom-action p {
+                display: block;
+                padding-top: 0.6111rem;
+            }
+
+            .right-column-bottom-action button,
+            .right-column-bottom-action a,
+            .right-column-bottom-action p {
+                padding-left: 0;
+                text-align: center;
+
+            }
+
+            .right-column-bottom-action button {
+                width: 100%;
+            }
+            .btn {
+                padding-right: 0;
+            }
+        }
+
+        @media screen and (max-width: 800px) {
+            .container {
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width: 800px) {
+
+            .left-column,
+            .right-column {
+                width: 100%;
+                height: auto;
+            }
+
+            .left-column-container {
+                height: auto;
+            }
+            .links {
+                position: static;
+                bottom: 0;
+                padding-bottom: 1rem;
+            }
+            .right-column-container {
+                position: relative;
+            }
         }
     </style>
 </head>
